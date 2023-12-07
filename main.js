@@ -2,6 +2,7 @@ import './style.css';
 import javascriptLogo from './javascript.svg';
 import viteLogo from '/vite.svg';
 import { showEnv } from './src/concepts/1_environmens';
+import { demo } from './src/concepts';
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -18,7 +19,4 @@ document.querySelector('#app').innerHTML = `
   </div>
 `
 
-let appCard = document.querySelector(".card");
-
-console.log(import.meta.env);
-showEnv(appCard);
+demo();
