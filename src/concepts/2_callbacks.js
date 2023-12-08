@@ -6,7 +6,11 @@ import { heros } from "../data/heros"
  */
 export const callbacks = (element) => {    
     const heroId = "5d86371f1efebc31def272e2";
-    findHero( heroId, (hero) => {
+    findHero( heroId, (error, hero) => {
+        if (error) {
+            element.innerText = error;
+            return;
+        }
         element.innerText = hero.name;
     });
 }
@@ -14,9 +18,15 @@ export const callbacks = (element) => {
 /**
  * 
  * @param {String} heroId 
- * @param { (hero: Object) => void } callback 
+ * @param { (error: String, hero: Object) => void } callback 
  */
 const findHero = (heroId, callback) => {
     let hero = heros.find( hero => hero.id === heroId );
-    callback(hero);
+
+    if (!hero) {
+        callback(`El id: -${heroId}- no esta definido...`);
+        return;
+    }
+
+    callback(null, hero);
 }
