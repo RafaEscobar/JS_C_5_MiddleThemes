@@ -11,6 +11,7 @@ export const callbacks = (element) => {
             element.innerText = error;
             return;
         }
+        // element.innerText = hero?.name;
         element.innerText = hero.name;
     });
 }
