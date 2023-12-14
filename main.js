@@ -1,7 +1,7 @@
 import './style.css';
 import javascriptLogo from './javascript.svg';
 import viteLogo from '/vite.svg';
-import { callbacks, demo } from './src/concepts';
+import { callbacks, demo, promises } from './src/concepts';
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -20,4 +20,4 @@ document.querySelector('#app').innerHTML = `
 
 let appCard = document.querySelector(".card");
 
-callbacks(appCard);
+promises(appCard);
