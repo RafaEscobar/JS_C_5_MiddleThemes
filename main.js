@@ -20,5 +20,5 @@ document.querySelector('#app').innerHTML = `
 
 let appCard = document.querySelector(".card");
 
-// asyncAwait(appCard);
-asyncAwaitExample(appCard);
+asyncAwait(appCard);
+// asyncAwaitExample(appCard);
