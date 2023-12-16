@@ -6,3 +6,4 @@ export { promises } from "./3_promises";
 export { promiseRase } from "./4_promise_rase";
 export { asyncComponent } from "./5_async";
 export { asyncAwait } from "./6_async_await";
+export { asyncAwaitExample } from "./7_aync_await_example";

@@ -1,7 +1,7 @@
 import './style.css';
 import javascriptLogo from './javascript.svg';
 import viteLogo from '/vite.svg';
-import { asyncAwait, asyncComponent, callbacks, demo, promiseRase, promises } from './src/concepts';
+import { asyncAwait, asyncAwaitExample, asyncComponent, callbacks, demo, promiseRase, promises } from './src/concepts';
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -20,4 +20,5 @@ document.querySelector('#app').innerHTML = `
 
 let appCard = document.querySelector(".card");
 
-asyncAwait(appCard);
+// asyncAwait(appCard);
+asyncAwaitExample(appCard);
