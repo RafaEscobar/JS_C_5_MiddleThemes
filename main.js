@@ -1,7 +1,7 @@
 import './style.css';
 import javascriptLogo from './javascript.svg';
 import viteLogo from '/vite.svg';
-import { callbacks, demo, promiseRase, promises } from './src/concepts';
+import { asyncComponent, callbacks, demo, promiseRase, promises } from './src/concepts';
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -19,4 +19,5 @@ document.querySelector('#app').innerHTML = `
 `
 
 let appCard = document.querySelector(".card");
-promiseRase(appCard);
+
+asyncComponent(appCard);
