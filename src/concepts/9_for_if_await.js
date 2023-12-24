@@ -10,8 +10,8 @@ export const forAwaitComponent = async( element ) => {
 
     const myHeros = getHeroesAsync( herosIds );
 
-    for await( const hero of myHeros ) {
-        element.innerHTML += `${ hero.name } <br/> `
+    for await( const {name} of myHeros ) {
+        element.innerHTML += `${ name } <br/> `
     }
 
 }
@@ -34,9 +34,7 @@ const getHeroesAsync = ( heroIds ) => {
 
 const getHeroAsync = async(id) => {
 
-    await new Promise(( resolve ) => {
-        setTimeout(() => resolve(), 1000)
-    });
+    await new Promise( resolve => setTimeout(() => resolve(), 1000) );
 
     return heros.find( hero => hero.id === id );
 }
