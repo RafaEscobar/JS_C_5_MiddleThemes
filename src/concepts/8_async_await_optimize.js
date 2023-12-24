@@ -7,9 +7,11 @@ export const asyncAwaitOptimize = async(element) => {
 
     console.time('start');
 
-    let myPromise1 = await slowPromise();
-    let myPromise2 = await mediumPromise();
-    let myPromise3 = await fastPromise();
+    const [myPromise1, myPromise2, myPromise3] = await Promise.all([
+        slowPromise(),
+        mediumPromise(),
+        fastPromise(),
+    ]);
 
     element.innerHTML = `
         <h2>${myPromise1}</h2>
@@ -17,6 +19,7 @@ export const asyncAwaitOptimize = async(element) => {
         <h2>${myPromise3}</h2>
     `;
     console.timeEnd('start');
+    console.log('Que pinche hermoso es JS');
 }
 
 const slowPromise = () => new Promise(resolve => {
