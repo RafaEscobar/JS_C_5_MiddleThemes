@@ -6,12 +6,20 @@ import { heros } from "../data/heros";
  */
 export const forAwaitComponent = async( element ) => {
 
-    const herosIds = heros.map( hero => hero.id );
+    // const herosIds = heros.map( hero => hero.id );
 
-    const myHeros = getHeroesAsync( herosIds );
+    // const myHeros = getHeroesAsync( herosIds );
 
-    for await( const {name} of myHeros ) {
-        element.innerHTML += `${ name } <br/> `
+    // for await( const {name} of myHeros ) {
+    //     element.innerHTML += `${ name } <br/> `
+    // }
+
+    const heroId = "5d86371f1efebc31def272e2";
+
+    if (await getHeroAsync(heroId)) {
+        console.log("Si se Resolvio 🎉🎉");
+    } else {
+        console.log("No se resolvio");
     }
 
 }
