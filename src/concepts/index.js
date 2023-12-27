@@ -1,3 +1,4 @@
+
 export { demo } from "./demo";
 export { asyncComponent } from "./5_async";
 export { asyncAwait } from "./6_async_await";
@@ -10,4 +11,5 @@ export { promises } from "./3_promises";
 export { promiseRase } from "./4_promise_rase";
 export { forAwaitComponent } from "./9_for_if_await";
 export { generatingFunction } from "./10_generatingFunction";
+export { generatingFunctionExercise } from "./11_generatingFunction_exercise";
 // export { asyncAwaitOptimize } from "./8_async_await_optimize";
