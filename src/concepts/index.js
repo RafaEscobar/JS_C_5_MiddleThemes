@@ -10,4 +10,4 @@ export { promises } from "./3_promises";
 export { promiseRase } from "./4_promise_rase";
 export { forAwaitComponent } from "./9_for_if_await";
 export { generatingFunction } from "./10_generatingFunction";
-export { asyncAwaitOptimize } from "./8_async_await_optimize";
+// export { asyncAwaitOptimize } from "./8_async_await_optimize";
