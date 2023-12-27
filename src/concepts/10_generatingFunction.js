@@ -8,7 +8,10 @@ export const generatingFunction = (element) => {
     const ref = myGeneratingFunction();
 
     setInterval(() => {
-        console.log(ref.next());
+        const {value, done} = ref.next();
+        if (done == false) {
+            console.log(value);
+        }
     }, 2000);
 
 }

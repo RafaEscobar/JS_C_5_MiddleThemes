@@ -20,4 +20,5 @@ document.querySelector('#app').innerHTML = `
 
 let appCard = document.querySelector(".card");
 
-generatingFunctionExercise(appCard);
+// generatingFunctionExercise(appCard);
+generatingFunction(appCard);
