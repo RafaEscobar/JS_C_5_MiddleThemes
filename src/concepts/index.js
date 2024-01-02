@@ -12,4 +12,6 @@ export { promiseRase } from "./4_promise_rase";
 export { forAwaitComponent } from "./9_for_if_await";
 export { generatingFunction } from "./10_generatingFunction";
 export { generatingFunctionExercise } from "./11_generatingFunction_exercise";
+export { generatingAsync } from "./12_generatingFuncionAsync";
+
 // export { asyncAwaitOptimize } from "./8_async_await_optimize";
