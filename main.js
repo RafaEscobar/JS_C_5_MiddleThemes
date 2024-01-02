@@ -1,8 +1,7 @@
 import './style.css';
 import javascriptLogo from './javascript.svg';
 import viteLogo from '/vite.svg';
-import { asyncAwait, asyncAwaitExample, asyncComponent, callbacks, demo, forAwaitComponent, promiseRase, promises } from './src/concepts';
-import { asyncAwaitOptimize } from './src/concepts/8_async_await_optimize';
+import { asyncAwait, asyncAwaitExample, asyncAwaitOptimize, asyncComponent, callbacks, demo, forAwaitComponent, generatingAsync, generatingFunction, generatingFunctionExercise, promiseRase, promises } from './src/concepts';
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -14,11 +13,12 @@ document.querySelector('#app').innerHTML = `
     </a>
     <h1>Hello Vite!</h1>
     <div class="card">
-      
+
     </div>
   </div>
 `
 
 let appCard = document.querySelector(".card");
 
-forAwaitComponent(appCard);
+generatingAsync(appCard);
+
